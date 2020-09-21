@@ -1,6 +1,6 @@
 public class Card {
 
-  private int number; // A=0, J=11, Q=12, K=13
+  private int number; // J=11, Q=12, K=13, A=14
   private Suit suit;
 
   public Card(String cardstr) {
@@ -22,5 +22,13 @@ public class Card {
       default:
         System.out.println("illegal input for suit: " + pieces[1]); //TODO throw exception
     }
+  }
+
+  public int getNum() {
+    return number;
+  }
+
+  public Suit getSuit() {
+    return suit;
   }
 }
